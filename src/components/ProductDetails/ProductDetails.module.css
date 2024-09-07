@@ -1,0 +1,23 @@
+.ProductDetails {}
+
+.sliderContainer {
+    width: 100%;
+    max-width: 400px; /* Adjust max-width as needed */
+    overflow: hidden; /* Prevents overflow */
+    margin: auto ; /* Centers the slider horizontally */
+  }
+  
+  .sliderImage {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+  }
+  .productDetailsCss{
+    width: 100%;
+    max-width: 700px;
+  }
+  .getMaxWidth {
+    width: 100%;
+    
+  }
+  
+  

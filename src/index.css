@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  margin-top: 60px;
+}
+.row {
+  @apply flex flex-wrap p-4;
+}
+
+.btn {
+  @apply bg-green-500 p-2 w-full rounded-md text-white mt-5
+}

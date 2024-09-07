@@ -1,0 +1,9 @@
+.Categories {}
+
+.sliderCss{
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+}
