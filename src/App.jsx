@@ -12,7 +12,6 @@ import Brands from './components/Brands/Brands'
 import CounterContextProvider from './Context/CounterContext'
 import UserTokenContextProvider from './Context/UserTokenContext'
 import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes'
-import ProtectedRoutesAgian from './components/protectedRoutesAgian/protectedRoutesAgian'
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Product from './components/Product/Product'
@@ -26,6 +25,7 @@ import UpdatePassword from './components/UpdatePassword/UpdatePassword'
 import WishList from './components/wishList/wishList'
 import WishListContextProvider from './Context/WishListContext'
 import { CartContext } from './Context/CartContext'
+import ProtectedRoutesAuth from './components/ProtectedRoutesAuth/ProtectedRoutesAuth'
 
 
 function App() {
@@ -52,11 +52,11 @@ useEffect(()=>{
     path: "", element: <LayOut />, children: [
       { index: true, element: <Register /> },
       { path: "home", element: <ProtectedRoutes><Home /></ProtectedRoutes> },
-      { path: "login", element: <ProtectedRoutesAgian><Login /></ProtectedRoutesAgian> },
-      { path: "register", element: <ProtectedRoutesAgian><Register /></ProtectedRoutesAgian> },
-      { path: "forget", element: <ProtectedRoutesAgian><ForgetPassword /></ProtectedRoutesAgian> },
-      { path: "verify", element: <ProtectedRoutesAgian><VerifyPassword /></ProtectedRoutesAgian> },
-      { path: "update", element: <ProtectedRoutesAgian><UpdatePassword /></ProtectedRoutesAgian> },
+      { path: "login", element: <ProtectedRoutesAuth><Login /></ProtectedRoutesAuth> },
+      { path: "register", element: <ProtectedRoutesAuth><Register /></ProtectedRoutesAuth> },
+      { path: "forget", element: <ProtectedRoutesAuth><ForgetPassword /></ProtectedRoutesAuth> },
+      { path: "verify", element: <ProtectedRoutesAuth><VerifyPassword /></ProtectedRoutesAuth> },
+      { path: "update", element: <ProtectedRoutesAuth><UpdatePassword /></ProtectedRoutesAuth> },
       { path: "categories", element: <ProtectedRoutes><Categories /></ProtectedRoutes> },
       { path: "cart", element: <ProtectedRoutes><Cart /></ProtectedRoutes> },
       { path: "wishList", element: <ProtectedRoutes><WishList /></ProtectedRoutes> },
