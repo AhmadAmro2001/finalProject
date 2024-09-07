@@ -15,7 +15,6 @@ import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes'
 import ProtectedRoutesAgian from './components/protectedRoutesAgian/protectedRoutesAgian'
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import CartContextProvider, { CartContext } from './Context/CartContext'
 import Product from './components/Product/Product'
 import  { Toaster } from 'react-hot-toast';
 import CheckOut from './components/CheckOut/CheckOut'
@@ -26,6 +25,7 @@ import VerifyPassword from './components/VerifyPassword/VerifyPassword'
 import UpdatePassword from './components/UpdatePassword/UpdatePassword'
 import WishList from './components/wishList/wishList'
 import WishListContextProvider from './Context/WishListContext'
+import { CartContext } from './Context/CartContext'
 
 
 function App() {
