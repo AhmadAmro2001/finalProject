@@ -22,10 +22,10 @@ import { useContext, useEffect } from 'react'
 import ForgetPassword from './components/ForgetPassword/ForgetPassword'
 import VerifyPassword from './components/VerifyPassword/VerifyPassword'
 import UpdatePassword from './components/UpdatePassword/UpdatePassword'
-import WishList from './components/wishList/wishList'
 import WishListContextProvider from './Context/WishListContext'
 import { CartContext } from './Context/CartContext'
 import ProtectedRoutesAuth from './components/ProtectedRoutesAuth/ProtectedRoutesAuth'
+import MyWishList from './components/MyWishList/MyWishList'
 
 
 function App() {
@@ -59,7 +59,7 @@ useEffect(()=>{
       { path: "update", element: <ProtectedRoutesAuth><UpdatePassword /></ProtectedRoutesAuth> },
       { path: "categories", element: <ProtectedRoutes><Categories /></ProtectedRoutes> },
       { path: "cart", element: <ProtectedRoutes><Cart /></ProtectedRoutes> },
-      { path: "wishList", element: <ProtectedRoutes><WishList /></ProtectedRoutes> },
+      { path: "wishList", element: <ProtectedRoutes><MyWishList /></ProtectedRoutes> },
       { path: "product", element: <ProtectedRoutes><Product /></ProtectedRoutes> },
       { path: "brands", element: <ProtectedRoutes><Brands /></ProtectedRoutes> },
       { path: "checkout/:cartId", element: <ProtectedRoutes><CheckOut /></ProtectedRoutes> },

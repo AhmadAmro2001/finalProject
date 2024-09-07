@@ -1,11 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
-import styles from './WishList.module.css'
 import { WishListContext } from '../../Context/WishListContext';
 import { useNavigate } from 'react-router-dom';
 
-export default function WishList() {
+export default function MyWishList() {
     const {
-        addProductToWishList,
+        
         getWishListProducts,
         removeProductFromWishList,
       } = useContext(WishListContext);
@@ -131,3 +130,4 @@ export default function WishList() {
         </>
     )
 }
+
