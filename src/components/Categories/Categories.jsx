@@ -13,6 +13,20 @@ export default function Categories() {
         speed: 500,
         slidesToShow: 8,
         slidesToScroll: 3,
+        responsive:[
+            {
+                breakpoint: 1024, // Medium screen breakpoint (e.g., tablets)
+                settings: {
+                  slidesToShow: 4, // Show 4 images on medium screens
+                },
+            },
+            {
+                breakpoint: 768, // Small screen breakpoint (e.g., phones)
+                settings: {
+                  slidesToShow: 2, // Show 2 images on small screens
+                },
+            },
+        ]
     };
 
     useEffect(() => {

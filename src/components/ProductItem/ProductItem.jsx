@@ -8,7 +8,7 @@ export default function ProductItem({ product , addCart ,loading ,addToWishList}
 
     return (
         <>
-            <div key={product.id} className="w-1/6 p-1 ">
+            <div key={product.id} className="w-full sm:w-1/2 md:w-1/4 lg:w-1/6 p-1 ">
                 <div className="product  hover:rounded-md">
                     <Link to={`/productDetails/${product.id}/${product.category._id}`}>
                     <div className="productDetials">

@@ -50,7 +50,7 @@ useEffect(()=>{
 
   let routers = createBrowserRouter([{
     path: "", element: <LayOut />, children: [
-      { index: true, element: <Register /> },
+      { index: true, element: <Home /> },
       { path: "home", element: <ProtectedRoutes><Home /></ProtectedRoutes> },
       { path: "login", element: <ProtectedRoutesAuth><Login /></ProtectedRoutesAuth> },
       { path: "register", element: <ProtectedRoutesAuth><Register /></ProtectedRoutesAuth> },

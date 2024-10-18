@@ -19,15 +19,15 @@ export default function MainSlider() {
 
     return (
         <>
-            <div className="row">
-                <div className="w-3/4">
+            <div className="row flex-col sm:flex-row">
+                <div className="w-full sm:w-3/4">
                     <Slider {...settings}>
                         <img src={slider1} className='h-[600px]' alt="" />
                         <img src={slider2} className='h-[600px]' alt="" />
                         <img src={slider3} className='h-[600px]' alt="" />
                     </Slider>
                 </div>
-                <div className="w-1/4">
+                <div className="w-full sm:w-1/4 m-auto">
                     <img src={slider2} className='h-[300px]' alt="" />
                     <img src={slider3} className='h-[300px]' alt="" />
                 </div>
