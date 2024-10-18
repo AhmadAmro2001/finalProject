@@ -39,30 +39,30 @@ export default function NavBar() {
                     <div className="items-center justify-between   hidden w-full md:flex md:m-auto md:order-1" id="navbar-sticky">
 
                         <div>
-                            {token ? <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            {token ? <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                                 <li>
                                     <NavLink to='home' className="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 md:dark:text-green-500" aria-current="page">Home</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='cart' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Cart</NavLink>
+                                    <NavLink to='cart' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 ">Cart</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='product' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Product</NavLink>
+                                    <NavLink to='product' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 ">Product</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='categories' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Category</NavLink>
+                                    <NavLink to='categories' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 ">Category</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='brands' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Brands</NavLink>
+                                    <NavLink to='brands' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 ">Brands</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to='wishList' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">wish list</NavLink>
+                                    <NavLink to='wishList' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 ">wish list</NavLink>
                                 </li>
                             </ul> : null}
 
                         </div>
                         <div>
-                            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                                 <li>
                                 <span className='text-green-500 mx-2 text-bold'>{cartItemNo}</span>
                                 <i className="fa-solid fa-cart-shopping text-green-500"></i>
@@ -83,10 +83,10 @@ export default function NavBar() {
                                     <button className="block py-2 px-3 text-gray-900 rounded md:hover:text-green-700 " onClick={logOut}>Logout</button>
                                 </li> : <>
                                     <li>
-                                        <NavLink to='login' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Login</NavLink>
+                                        <NavLink to='login' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 ">Login</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='register' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Register</NavLink>
+                                        <NavLink to='register' className="block py-2 px-3 text-gray-900 rounded   md:hover:text-green-700 md:p-0 ">Register</NavLink>
                                     </li>
                                 </>}
 
